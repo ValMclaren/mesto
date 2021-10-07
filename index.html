@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Mesto</title>
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__logo"></div>
+    </header>
+    <main class="content">
+        <section class="profile">
+          <div class="profile__avatar">
+            <div class="profile__image"></div>
+          </div>
+          <div class="profile__container">
+            <div class="profile__info">
+              <div class="profile__bio">
+                  <h1 class="profile__name">Жак-Ив Кусто</h1>
+                  <button class="profile__edit-btn" aria-label="редактировать профиль" type="button"></button>
+              </div>
+              <p class="profile__caption">Исследователь океана</p>
+            </div>
+            <button class="profile__add-btn" aria-label="добавить фото" type="button"></button>
+          </div>
+        </section>
+        <section class="photo-grid">
+          <ul class="photo-grid__photos">
+            <li class="photo">
+              <img class="photo__image" src="images/osetia.jpg" alt="фото осетии">
+              <div class="photo__description">
+                <h2 class="photo__title">Осетия</h2>
+                <button class="photo__like-btn photo__like-btn-active" aria-label="Нравится" type="button"></button>
+              </div>
+            </li>
+            <li class="photo">
+              <img class="photo__image" src="images/moskow.jpg" alt="фото москвы">
+              <div class="photo__description">
+                <h2 class="photo__title">Москва</h2>
+                <button class="photo__like-btn photo__like-btn-active" aria-label="Нравится"></button>
+              </div>
+            </li>
+            <li class="photo">
+              <img class="photo__image" src="images/spb.jpg" alt="фото санкт-петербурга">
+              <div class="photo__description">
+                <h2 class="photo__title">Санкт-Петербург</h2>
+                <button class="photo__like-btn photo__like-btn-active" aria-label="Нравится"></button>
+              </div>
+            </li>
+            <li class="photo">
+              <img class="photo__image" src="images/baikal.jpg" alt="фото байкала">
+              <div class="photo__description">
+                <h2 class="photo__title">Байкал</h2>
+                <button class="photo__like-btn photo__like-btn-active" aria-label="Нравится"></button>
+              </div>
+            </li>
+            <li class="photo">
+              <img class="photo__image" src="images/kamchatka.jpg" alt="фото камчатки">
+              <div class="photo__description">
+                <h2 class="photo__title">Камчатка</h2>
+                <button class="photo__like-btn photo__like-btn-active" aria-label="Нравится"></button>
+              </div>
+            </li>
+            <li class="photo">
+              <img class="photo__image" src="images/karelia.jpg" alt="фото карелии">
+              <div class="photo__description">
+                <h2 class="photo__title">Карелия</h2>
+                <button class="photo__like-btn photo__like-btn-active" aria-label="Нравится"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__author">© 2021 Mesto Russia</p>
+    </footer>
+    <section class="popup">
+      <div class="popup__container">
+        <form class="popup__form">
+          <button class="popup__close"></button>
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <input type="text" class="popup__field popup__field_type_name" placeholder="Имя" id="name" name="name">
+          <input type="text" class="popup__field popup__field_type_job" placeholder="Профессия" id="job" name="job">
+          <button class="popup__save popup__save_action" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
