@@ -4,18 +4,18 @@
   background-repeat: no-repeat;
   background-position: 50%;
   border-style: none;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   height: 50px;
   width: 150px;
   align-self: center;
   cursor: pointer;
   margin: 0;
   padding: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .profile__add-btn:hover {
   opacity: 0.6;
-  transition: opacity .5s ease-in-out;
 }
 
 @media screen and (max-width: 580px) {
