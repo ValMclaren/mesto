@@ -1,9 +1,15 @@
 .photo__description {
   display: flex;
   margin: 0 auto;
-  padding: 25px 15px 31px 21px;
+  padding: 27px 20px 31px 21px;
   box-sizing: border-box;
-  height: 79px;
+  height: 77px;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 580px) {
+  .photo__description {
+    height: 75px;
+  }
 }

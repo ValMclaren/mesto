@@ -1,4 +1,4 @@
-.photo__like-btn {
+.photo__like {
   align-self: center;
   background-image: url(../../../images/like.svg);
   width: 22px;
@@ -9,9 +9,9 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.photo__like-btn:hover {
+.photo__like:hover {
   opacity: 0.5;
-  transition: opacity 0.5s ease-in-out;
 }

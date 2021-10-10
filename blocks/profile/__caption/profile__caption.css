@@ -1,11 +1,12 @@
 .profile__caption {
-  margin: 0;
+  margin: 7px 0 0 0;
   padding: 0;
   font-family: "Inter", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
+  max-width: 294px;
 
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -17,6 +18,7 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    padding-top: 14px;
+    padding-top: 5px;
+    margin: 0;
   }
 }

@@ -39,12 +39,12 @@
             <img
               class="photo__image"
               src="images/osetia.jpg"
-              alt="фото осетии"
+              alt="горы в осетии"
             />
             <div class="photo__description">
               <h2 class="photo__title">Осетия</h2>
               <button
-                class="photo__like-btn photo__like-btn-active"
+                class="photo__like"
                 aria-label="Нравится"
                 type="button"
               ></button>
@@ -54,12 +54,12 @@
             <img
               class="photo__image"
               src="images/moskow.jpg"
-              alt="фото москвы"
+              alt="красная площадь зимой"
             />
             <div class="photo__description">
               <h2 class="photo__title">Москва</h2>
               <button
-                class="photo__like-btn photo__like-btn-active"
+                class="photo__like"
                 aria-label="Нравится"
                 type="button"
               ></button>
@@ -69,12 +69,12 @@
             <img
               class="photo__image"
               src="images/spb.jpg"
-              alt="фото санкт-петербурга"
+              alt="набережная реки Фонтанка в Санкт-Петербурге"
             />
             <div class="photo__description">
               <h2 class="photo__title">Санкт-Петербург</h2>
               <button
-                class="photo__like-btn photo__like-btn-active"
+                class="photo__like"
                 aria-label="Нравится"
                 type="button"
               ></button>
@@ -84,12 +84,12 @@
             <img
               class="photo__image"
               src="images/baikal.jpg"
-              alt="фото байкала"
+              alt="замерзший лед озера Байкал"
             />
             <div class="photo__description">
               <h2 class="photo__title">Байкал</h2>
               <button
-                class="photo__like-btn photo__like-btn-active"
+                class="photo__like"
                 aria-label="Нравится"
                 type="button"
               ></button>
@@ -99,12 +99,12 @@
             <img
               class="photo__image"
               src="images/kamchatka.jpg"
-              alt="фото камчатки"
+              alt="набережная моря и горы на Камчатке"
             />
             <div class="photo__description">
               <h2 class="photo__title">Камчатка</h2>
               <button
-                class="photo__like-btn photo__like-btn-active"
+                class="photo__like"
                 aria-label="Нравится"
                 type="button"
               ></button>
@@ -114,12 +114,12 @@
             <img
               class="photo__image"
               src="images/karelia.jpg"
-              alt="фото карелии"
+              alt="набережная реки и лес в Карелии"
             />
             <div class="photo__description">
               <h2 class="photo__title">Карелия</h2>
               <button
-                class="photo__like-btn photo__like-btn-active"
+                class="photo__like"
                 aria-label="Нравится"
                 type="button"
               ></button>
@@ -131,11 +131,11 @@
     <footer class="footer">
       <p class="footer__author">© 2021 Mesto Russia</p>
     </footer>
-    <section class="popup">
+    <div class="popup">
       <div class="popup__container">
+        <button class="popup__close" type="button"></button>
+        <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="popup_form">
-          <button class="popup__close" type="button"></button>
-          <h3 class="popup__title">Редактировать профиль</h3>
           <input
             type="text"
             class="popup__field popup__field_type_name"
@@ -150,12 +150,12 @@
             id="job"
             name="job"
           />
-          <button class="popup__save popup__save_action" type="submit">
+          <button class="popup__save" type="submit">
             Сохранить
           </button>
         </form>
       </div>
-    </section>
+    </div>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
