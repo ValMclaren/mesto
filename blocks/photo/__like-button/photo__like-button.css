@@ -1,9 +1,9 @@
-.photo__like {
+.photo__like-button {
   align-self: center;
   background-image: url(../../../images/like.svg);
   width: 22px;
   height: 19px;
-  background-color: white;
+  background-color: transparent;
   background-repeat: no-repeat;
   border-style: none;
   margin: 0;
@@ -12,6 +12,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.photo__like:hover {
+.photo__like-button:hover {
   opacity: 0.5;
 }
+

@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  height: 27px;
+  min-height: 27px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
