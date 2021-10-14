@@ -7,7 +7,6 @@ let jobInput = document.querySelector('.popup__field_type_job');
 
 let profileName = document.querySelector('.profile__name');
 let profileJob = document.querySelector('.profile__caption');
-let form = document.querySelector('.popup__form');
 
 function openPopup() {
   nameInput.value = profileName.textContent;

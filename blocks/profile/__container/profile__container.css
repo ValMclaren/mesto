@@ -16,6 +16,6 @@
   .profile__container {
     flex-direction: column;
     max-width: 80vw;
-    margin: 0;
+    margin: 20px 0 0 0;
   }
 }
