@@ -1,8 +1,11 @@
-.photo__like-button {
+.photo__delete-button {
   align-self: center;
-  background-image: url(../../../images/like.svg);
-  width: 22px;
+  background-image: url(../../../images/trash.svg);
+  width: 18px;
   height: 19px;
+  top: 20px;
+  right: 20px;
+  position: absolute;
   background-color: transparent;
   background-repeat: no-repeat;
   border-style: none;
@@ -12,6 +15,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.photo__like-button:hover {
+.photo__delete-button:hover {
   opacity: 0.5;
 }

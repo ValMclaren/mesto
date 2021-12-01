@@ -1,0 +1,28 @@
+.popup-addphoto__save {
+  border-style: none;
+  width: 358px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  transition: opacity 0.5s ease-in-out;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.popup-addphoto__save:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 540px) {
+  .popup-addphoto__save {
+    font-size: 14px;
+    line-height: 17px;
+    width: 238px;
+    height: 46px;
+    margin: 45px 0 0 0;
+  }
+}
