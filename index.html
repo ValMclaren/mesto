@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/cards.js"></script>
     <title>Mesto</title>
   </head>
   <body class="page">
@@ -42,60 +43,76 @@
       <p class="footer__author">© 2021 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
-      <div class="popup__container">
-        <button class="popup__close" type="button"></button>
-        <h3 class="popup__title">Редактировать профиль</h3>
-        <form class="popup__form" name="popup_form">
+    <div class="popup popup-user">
+      <div class="popup__container popup-user__container">
+        <button class="popup__close popup-user__close" type="button"></button>
+        <h3 class="popup__title popup-user__title">Редактировать профиль</h3>
+        <form class="popup__form popup-user__form" name="popup_form">
           <input
             type="text"
-            class="popup__field popup__field_type_name"
+            class="popup__field popup-user__field_type_name"
             placeholder="Имя"
             id="name"
             name="name"
           />
           <input
             type="text"
-            class="popup__field popup__field_type_job"
+            class="popup__field popup-user__field_type_job"
             placeholder="Профессия"
             id="job"
             name="job"
           />
-          <button class="popup__save" type="submit">Сохранить</button>
+          <button class="popup__save popup-user__save" type="submit">
+            Сохранить
+          </button>
         </form>
       </div>
     </div>
 
-    <div class="popup-addphoto">
-      <div class="popup-addphoto__container">
-        <button class="popup-addphoto__close" type="button"></button>
-        <h3 class="popup-addphoto__title">Новое место</h3>
-        <form class="popup-addphoto__form" name="popup_form">
+    <div class="popup popup-addphoto">
+      <div class="popup__container popup-addphoto__container">
+        <button
+          class="popup__close popup-addphoto__close"
+          type="button"
+        ></button>
+        <h3 class="popup__title popup-addphoto__title">Новое место</h3>
+        <form
+          class="popup__form popup-addphoto__form"
+          name="popup-addphoto__form"
+        >
           <input
             type="text"
-            class="popup-addphoto__field popup-addphoto__field_type_name"
+            class="
+              popup__field
+              popup-addphoto__field popup-addphoto__field_type_name
+            "
             placeholder="Название"
             id="place"
             name="name"
           />
           <input
             type="text"
-            class="popup-addphoto__field popup-addphoto__field_type_link"
+            class="
+              popup__field
+              popup-addphoto__field popup-addphoto__field_type_link
+            "
             placeholder="Ссылка на картинку"
             id="link"
             name="link"
           />
-          <button class="popup-addphoto__save" type="submit">Создать</button>
+          <button class="popup__save popup-addphoto__save" type="submit">
+            Создать
+          </button>
         </form>
       </div>
     </div>
 
-    <section class="popup-full">
-      <div class="popup-full__container">
-        <button class="popup-full__close" type="button"></button>
-        <figure class="popup-full__figure">
-          <img src="#" alt="#" class="popup-full__image" />
-          <figcaption class="popup-full__figcaption"></figcaption>
+    <section class="popup popup-full">
+      <div class="popup__container-full popup-full__container">
+        <button class="popup__close popup-full__close" type="button"></button>
+        <figure class="popup__figure">
+          <img src="#" alt="#" class="popup__image-full" />
+          <figcaption class="popup__figcaption"></figcaption>
         </figure>
       </div>
     </section>
