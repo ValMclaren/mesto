@@ -6,8 +6,8 @@ const popupUserClose = document.querySelector('.popup-user__close');
 const editProfileBtn = document.querySelector('.profile__edit-btn');
 const popupUser = document.querySelector('.popup-user');
 
-const nameInput = document.querySelector('.popup-user__field_type_name');
-const jobInput = document.querySelector('.popup-user__field_type_job');
+const nameInput = document.querySelector('.popup__field_type_name');
+const jobInput = document.querySelector('.popup__field_type_job');
 
 const popupPhoto = document.querySelector('.popup-addphoto');
 const popupPhotoCloseBtn = popupPhoto.querySelector('.popup-addphoto__close');
