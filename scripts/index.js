@@ -1,7 +1,5 @@
 'use strict';
 
-const popupList = Array.from(document.querySelectorAll('.popup'));
-const popup = document.querySelector('.popup');
 const popupUserClose = document.querySelector('.popup-user__close');
 const editProfileBtn = document.querySelector('.profile__edit-btn');
 const popupUser = document.querySelector('.popup-user');
