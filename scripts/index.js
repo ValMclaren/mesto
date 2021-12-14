@@ -5,8 +5,8 @@ const popupUserClose = document.querySelector('.popup-user__close');
 const editProfileBtn = document.querySelector('.profile__edit-btn');
 const popupUser = document.querySelector('.popup-user');
 
-const nameInput = document.querySelector('.popup__field_type_name');
-const jobInput = document.querySelector('.popup__field_type_job');
+const nameInput = document.querySelector('.popup__input_type_name');
+const jobInput = document.querySelector('.popup__input_type_job');
 
 const popupPhoto = document.querySelector('.popup-addphoto');
 const popupPhotoCloseBtn = popupPhoto.querySelector('.popup-addphoto__close');
@@ -29,14 +29,6 @@ const popupFig = document.querySelector('.popup__figcaption');
 
 const popupOverlay = document.querySelectorAll('.popup__overlay');
 
-enableValidation({
-  formSelector: '.popup__form',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__save',
-  inactiveButtonClass: 'popup__save_disabled',
-  inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__error_visible'
-});
 
 function openPopup(popup) {
   popup.classList.add('popup_is-opened');
