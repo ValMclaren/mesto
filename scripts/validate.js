@@ -20,12 +20,6 @@ const hideInputError = (formElement, inputElement, inputErrorClass, errorClass) 
   errorElement.textContent = '';
 }
 
-const toggleButtonState = (formElement, buttonElement, inactiveButtonClass) => {
-  const isFormValid = formElement.checkValidity();
-  buttonElement.classList.toggle(inactiveButtonClass, !isFormValid)
-  buttonElement.disabled = !isFormValid;
-}
-
 const setEventListeners = (formElement, {
   inputSelector,
   submitButtonSelector,
@@ -45,16 +39,22 @@ const setEventListeners = (formElement, {
   })
 }
 
+const toggleButtonState = (formElement, buttonElement, inactiveButtonClass) => {
+  const isFormValid = formElement.checkValidity();
+  buttonElement.classList.toggle(inactiveButtonClass, !isFormValid)
+  buttonElement.disabled = !isFormValid;
+}
+
 const enableValidation = ({
   formSelector,
-  ...rest
+  ...any
 }) => {
   const getFormList = Array.from(document.querySelectorAll(formSelector));
   getFormList.forEach((formElement) => {
     formElement.addEventListener('submit', (evt) => {
       evt.preventDefault();
     });
-    setEventListeners(formElement, rest);
+    setEventListeners(formElement, any);
   })
 };
 
