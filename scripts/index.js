@@ -1,5 +1,6 @@
 'use strict';
 
+const popupArray = Array.from(document.querySelectorAll('.popup'));
 const popupUserClose = document.querySelector('.popup-user__close');
 const editProfileBtn = document.querySelector('.profile__edit-btn');
 const popupUser = document.querySelector('.popup-user');
@@ -26,13 +27,25 @@ const popupFullCloseBtn = document.querySelector('.popup-full__close');
 const popupImg = document.querySelector('.popup__image-full');
 const popupFig = document.querySelector('.popup__figcaption');
 
+const popupOverlay = document.querySelectorAll('.popup__overlay');
+
+enableValidation({
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__save',
+  inactiveButtonClass: 'popup__save_disabled',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__error_visible'
+});
 
 function openPopup(popup) {
   popup.classList.add('popup_is-opened');
+  document.addEventListener('keydown', closePopupByEsq);
 }
 
 function closePopup(popup) {
   popup.classList.remove('popup_is-opened');
+  document.removeEventListener('keydown', closePopupByEsq);
 }
 
 function handleProfilePopup() {
@@ -99,6 +112,21 @@ function handlePopupFull(evt) {
   openPopup(popupFull);
 }
 
+function closePopupByEsq(evt) {
+  const popupOpened = document.querySelector(".popup_is-opened");
+  if (evt.key === "Escape") {
+    closePopup(popupOpened);
+  }
+  return;
+}
+
+popupArray.forEach((popup) => {
+  popup.addEventListener('click', function(evt){
+    if(evt.target.classList.contains('popup') || evt.target.classList.contains('popup__close')){
+      closePopup(popup);
+    }
+  });
+})
 
 
 editProfileBtn.addEventListener('click', handleProfilePopup);

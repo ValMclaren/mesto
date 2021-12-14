@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/cards.js"></script>
+    <script src="./scripts/validate.js"></script>
     <title>Mesto</title>
   </head>
   <body class="page">
@@ -48,20 +49,30 @@
         <button class="popup__close popup-user__close" type="button"></button>
         <h3 class="popup__title popup-user__title">Редактировать профиль</h3>
         <form class="popup__form popup-user__form" name="popup_form">
+          <label class="popup__field">
           <input
             type="text"
-            class="popup__field popup__field_type_name"
+            class="popup__input popup__field_type_name"
             placeholder="Имя"
             id="name"
             name="name"
+            required
+            minlength="2" maxlength="40"
           />
+          <span class="popup__error" id="name-error"></span>
+        </label>
+        <label class="popup__field">
           <input
             type="text"
-            class="popup__field popup__field_type_job"
+            class="popup__input popup__field_type_job"
             placeholder="Профессия"
             id="job"
             name="job"
+            required
+            minlength="2" maxlength="200"
           />
+          <span class="popup__error" id="job-error"></span>
+        </label>
           <button class="popup__save popup-user__save" type="submit">
             Сохранить
           </button>
@@ -80,26 +91,35 @@
           class="popup__form popup-addphoto__form"
           name="popup-addphoto__form"
         >
+        <label class="popup__field">
           <input
             type="text"
             class="
-              popup__field
+              popup__input
               popup-addphoto__field popup-addphoto__field_type_name
             "
             placeholder="Название"
             id="place"
             name="name"
+            required
+            minlength="2" maxlength="30"
           />
+          <span class="popup__error" id="place-error"></span>
+        </label>
+        <label class="popup__field">
           <input
-            type="text"
+            type="url"
             class="
-              popup__field
+              popup__input
               popup-addphoto__field popup-addphoto__field_type_link
             "
             placeholder="Ссылка на картинку"
             id="link"
             name="link"
+            required
           />
+          <span class="popup__error" id="link-error"></span>
+        </label>
           <button class="popup__save popup-addphoto__save" type="submit">
             Создать
           </button>
