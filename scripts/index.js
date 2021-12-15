@@ -12,8 +12,8 @@ const popupPhoto = document.querySelector('.popup-addphoto');
 const popupPhotoCloseBtn = popupPhoto.querySelector('.popup-addphoto__close');
 const addPhotoBtn = document.querySelector('.profile__add-btn');
 
-const namePlaceInput = document.querySelector('.popup-addphoto__field_type_name');
-const linkPlaceInput = document.querySelector('.popup-addphoto__field_type_link');
+const namePlaceInput = document.querySelector('.popup-addphoto__input_type_name');
+const linkPlaceInput = document.querySelector('.popup-addphoto__input_type_link');
 
 const profileName = document.querySelector('.profile__name');
 const profileJob = document.querySelector('.profile__caption');
@@ -28,7 +28,6 @@ const popupImg = document.querySelector('.popup__image-full');
 const popupFig = document.querySelector('.popup__figcaption');
 
 const popupOverlay = document.querySelectorAll('.popup__overlay');
-
 
 function openPopup(popup) {
   popup.classList.add('popup_is-opened');

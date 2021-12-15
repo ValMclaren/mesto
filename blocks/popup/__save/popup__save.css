@@ -17,6 +17,15 @@
   opacity: 0.8;
 }
 
+.popup__save.popup__save_disabled {
+  opacity: 0.2;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid #000000;
+  background: #e5e5e5;
+  pointer-events: none;
+  user-select: none;
+}
+
 @media screen and (max-width: 540px) {
   .popup__save {
     font-size: 14px;

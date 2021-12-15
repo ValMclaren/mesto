@@ -35,18 +35,14 @@
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__figure/popup__figure.css);
 @import url(../blocks/popup/__figcaption/popup__figcaption.css);
-@import url(../blocks/popup/__field/popup__field.css);
-@import url(../blocks/popup/__field/_type/popup__field_type_job.css);
-@import url(../blocks/popup/__field/_type/popup__field_type_name.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_type/popup__input_type_error.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__container-full/popup__container-full.css);
 @import url(../blocks/popup/__close/popup__close.css);
-@import url(../blocks/popup/__save/_disable/popup__save_disabled.css);
-@import url(../blocks/popup/__overlay/popup__overlay.css);
-@import url(../blocks/popup/__input/_type/popup__input_type_error.css);
 @import url(../blocks/popup/__error/popup__error.css);
 @import url(../blocks/popup/__error/_visible/popup__error_visible.css);
-@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__field/popup__field.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__author/footer__author.css);
