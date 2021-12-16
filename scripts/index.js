@@ -39,7 +39,7 @@ function closePopup(popup) {
   document.removeEventListener('keydown', closePopupByEsq);
 }
 
-function handleProfilePopup() {
+function openEditProfilePopup() {
   openPopup(popupUser);
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
@@ -62,7 +62,7 @@ function createCard(src, name) {
   imageGrid.alt = name;
 
   newCard.querySelector('.photo__title').textContent = name;
-  imageGrid.addEventListener('click', handlePopupFull);
+  imageGrid.addEventListener('click', openImagePopup);
   deleteBtn.addEventListener('click', deleteCard);
   likeBtn.addEventListener('click', likeCard);
 
@@ -87,7 +87,7 @@ function likeCard(evt) {
   evt.target.classList.toggle('photo__like-button_active');
 }
 
-function handleAdd(evt) {
+function submitAddCardForm(evt) {
   evt.preventDefault();
   const cardUser = { name: namePlaceInput.value, link: linkPlaceInput.value };
   placeCard(cardUser);
@@ -96,7 +96,7 @@ function handleAdd(evt) {
   linkPlaceInput.value = '';
 }
 
-function handlePopupFull(evt) {
+function openImagePopup(evt) {
   popupImg.src = evt.target.src;
   popupImg.alt = evt.target.alt;
   popupFig.textContent = evt.target.alt;
@@ -120,10 +120,10 @@ popupArray.forEach((popup) => {
 })
 
 
-editProfileBtn.addEventListener('click', handleProfilePopup);
+editProfileBtn.addEventListener('click', openEditProfilePopup);
 popupUser.addEventListener('submit', submitProfileForm);
 popupUserClose.addEventListener('click', () => closePopup(popupUser));
 addPhotoBtn.addEventListener('click', () => openPopup(popupPhoto));
-popupPhoto.addEventListener('submit', handleAdd);
+popupPhoto.addEventListener('submit', submitAddCardForm);
 popupPhotoCloseBtn.addEventListener('click', () => closePopup(popupPhoto));
 popupFullCloseBtn.addEventListener('click', () => closePopup(popupFull));

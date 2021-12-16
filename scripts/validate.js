@@ -18,13 +18,13 @@ const hasInvalidInput = (inputs) => {
 }
 
 const toggleButtonError = (inputs, button, inactiveButtonClass) => {
-    if (hasInvalidInput(inputs)) {
-      button.classList.add(inactiveButtonClass);
-      button.disabled = true;
-  } else {
+    if (!hasInvalidInput(inputs)) {
       button.classList.remove(inactiveButtonClass);
       button.disabled = false;
-  }
+  } else {
+    button.classList.add(inactiveButtonClass);
+    button.disabled = true;
+}
 }
 
 const checkIfInputValid = (form, input, { inputErrorClass, errorClass }) => {
@@ -58,12 +58,3 @@ const enableValidation = ({ formSelector, ...rest }) => {
       setInputListeners(form, rest);
   });
 }
-
-enableValidation({
-  formSelector: '.popup__form',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__save',
-  inactiveButtonClass: 'popup__save_disabled',
-  inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__error_visible'
-});

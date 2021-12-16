@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/cards.js"></script>
     <title>Mesto</title>
   </head>
   <body class="page">
@@ -74,7 +72,7 @@
           />
           <span class="popup__error" id="job-error"></span>
         </label>
-          <button class="popup__save popup-user__save" type="submit">
+          <button class="popup__save popup-user__save popup__save_disabled" type="submit">
             Сохранить
           </button>
         </form>
@@ -123,7 +121,7 @@
           />
           <span class="popup__error" id="link-error"></span>
         </label>
-          <button class="popup__save popup-addphoto__save" type="submit">
+          <button class="popup__save popup-addphoto__save popup__save_disabled" type="submit">
             Создать
           </button>
         </form>
@@ -158,6 +156,9 @@
         </div>
       </li>
     </template>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/cards.js"></script>
     <script src="./scripts/validate.js"></script>
+    <script src="./scripts/validationConfig.js"></script>
   </body>
 </html>
