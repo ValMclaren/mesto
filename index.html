@@ -34,7 +34,7 @@
         </div>
       </section>
       <section class="photo-grid">
-        <ul class="photo-grid__photos"></ul>
+      <ul class="photo-grid__photos"></ul>
       </section>
     </main>
     <footer class="footer">
@@ -138,9 +138,13 @@
       </div>
     </section>
 
+    <template class="templatePhotoGrid">
+      <ul class="photo-grid__photos"></ul>
+    </template>
+
     <template class="templatePhoto">
       <li class="photo">
-        <img class="photo__image" src="#" alt="#" />
+        <img class="photo__image" src="#" alt="#" id="img" />
         <div class="photo__description">
           <h2 class="photo__title"></h2>
           <button
@@ -156,9 +160,8 @@
         </div>
       </li>
     </template>
-    <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/cards.js"></script>
-    <script src="./scripts/validate.js"></script>
-    <script src="./scripts/validationConfig.js"></script>
+    <script type='module' src="./scripts/index.js" defer></script>
+    <script type='module' src="./scripts/Card.js" defer></script>
+    <script type='module' src="./scripts/FormValidator.js" defer></script>
   </body>
 </html>
